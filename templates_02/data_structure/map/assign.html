@@ -5,8 +5,10 @@ Hello  parser
 
 <body>
 <h1>
-{{range .}}
-My name is{{.Name}}
+{{range $key,$val := .}}
+<li>
+About me  {{$key}} {{$val}}
+</li>
 {{end}}
 </h1>
 </body>

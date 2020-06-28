@@ -5,9 +5,9 @@ Hello  parser
 
 <body>
 <h1>
-{{range .}}
+{{range $index ,$elemt := .}}
 <li>
-the meaning of life is {{.}}
+the meaning of life is {{$index}} - {{$elemt}}
 </li>
 {{end}}
 </h1>
